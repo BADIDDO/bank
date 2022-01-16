@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* , ::after , ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    height: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    display: inline-flex;
+}
+ul li {
+    padding: 0 20px;
+}
+ul li a {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+ul li a:hover {
+    color: hsl(136, 65%, 51%);
+}
+header {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    place-items: center;
+}
+.icon {
+    display: none;
+}
+.btn  {
+    border: none;
+    background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    padding: 10px 25px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+.main-logo {
+    background: url(./images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+.main-logo img {
+    width: 95%;
+    transform: translateY(-15%);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 5em;
+}
+.content .title {
+    font-size: 30px;
+}
+.content .Pr {
+    font-size: 17px;
+    line-height: 1.8;
+    width: 75%;
+}
+
+.article {
+    background-color: #F3F4F6;
+}
+.con {
+    width: 90%;
+    margin: 0 auto;
+}
+.title-ar {
+    padding-top: 30px;
+    font-size: 35px;
+}
+.pr-ar{
+    padding-top: 10px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.articles {
+    width: 100%;
+}
+.title-ars {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.content-ar {
+    width: 90%;
+    margin: 0 auto;
+}
+.cards-ar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.cards-ar img {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px 15px 0 0;
+}
+
+footer {
+    background: #2D314D;
+}
+.footer-con {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    padding: 35px 0;
+}
+.about-us {
+    display: flex;
+    place-items: center;
+    padding: 35px 0;
+}
+.one , .two {
+    display: inline-grid;
+}
+.one a , .two a {
+    color: white;
+    padding: 5px 20px;
+    font-size: 17px;
+    text-align: center;
+}
+.btns{
+    padding: 35px 0;
+}
+.footer-p {
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    padding-top: 20px;
+    color: white;
+}
+
+@media (max-width : 667px) {
+    header {
+        font-size: 1em;
+    }
+
+    .container {
+        display: block;
+        width: 95%;
+    }
+    .icon {
+        display: block;
+        position: absolute;
+        left: 90%;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    .btn {
+        display: none;
+    }
+    ul {
+        display: none;
+        width: 100%;
+    }
+    .main {
+        width: 95%;
+    }
+    .main-content {
+        display: block;
+        text-align: center;
+    }
+    .content {
+        display: block;
+        margin-top: 1em;
+    }
+    .content .title {
+        font-size: 30px;
+    }
+    .content .Pr {
+        font-size: 17px;
+        line-height: 1.8;
+        width: 100%;
+    }
+    .article {
+text-align: center;
+    }
+
+    .cards-ar {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .footer-con {
+        width: 95%;
+        display: block;
+        place-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-us {
+        place-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
